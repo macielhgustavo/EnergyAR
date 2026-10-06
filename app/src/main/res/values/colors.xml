@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Energy AR brand colors - electric yellow/amber + dark industrial -->
+    <color name="energy_yellow">#FFFFC107</color>       <!-- Amber/Yellow: energy, electricity -->
+    <color name="energy_amber">#FFFFB300</color>        <!-- Darker amber -->
+    <color name="energy_orange">#FFFF9800</color>       <!-- Orange: high voltage, warning -->
+    <color name="energy_dark">#FF1A1A1A</color>         <!-- Dark industrial background -->
+    <color name="energy_darker">#FF0D0D0D</color>       <!-- Even darker -->
+    <color name="energy_surface">#FF1F1F1F</color>      <!-- Card/surface background -->
+    <color name="energy_text_primary">#FFFFFFFF</color>
+    <color name="energy_text_secondary">#FFB0B0B0</color>
+    <color name="energy_accent">#FF00E676</color>       <!-- Green accent: renewable, success -->
+    <color name="energy_warning">#FFFF6D00</color>      <!-- Warning orange -->
+    <color name="energy_danger">#FFFF1744</color>       <!-- Danger red -->
+    <!-- Keep some original for compatibility -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

@@ -1,7 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Biologia" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Energy AR theme colors -->
+        <item name="colorPrimary">@color/energy_amber</item>
+        <item name="colorPrimaryVariant">@color/energy_yellow</item>
+        <item name="colorOnPrimary">@color/energy_dark</item>
+        <item name="colorSecondary">@color/energy_accent</item>
+        <item name="colorSecondaryVariant">@color/energy_warning</item>
+        <item name="colorOnSecondary">@color/energy_dark</item>
+        <item name="colorBackground">@color/energy_dark</item>
+        <item name="colorSurface">@color/energy_surface</item>
+        <item name="colorOnSurface">@color/energy_text_primary</item>
+        <item name="colorError">@color/energy_danger</item>
+        <item name="colorOnError">@color/white</item>
     </style>
 </resources>
