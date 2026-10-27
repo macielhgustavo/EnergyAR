@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android App Template AR</string>
+    <string name="app_name">EnergyAR</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -11,4 +11,21 @@
     <string name="camera">camera</string>
     <string name="change">change</string>
     <string name="profile">profile</string>
+    <string name="camera_required">Permita o uso da câmera para iniciar a realidade aumentada.</string>
+    <string name="already_collected">Objeto já coletado. Escolha o outro na aba de modelos ou reinicie a missão.</string>
+    <string name="loading_model">Carregando modelo 3D…</string>
+    <string name="model_error">Não foi possível carregar o modelo. Escolha outro e tente novamente.</string>
+    <string name="position_model">%1$s: mova o celular devagar e posicione sobre uma superfície.</string>
+    <string name="find_surface">Procure uma superfície horizontal bem iluminada e movimente o celular devagar.</string>
+    <string name="ready_collect">Objeto ancorado. Toque em Coletar para ganhar 10 pontos.</string>
+    <string name="model_placed">Modelo ancorado. Escolha o sensor ou o filtro para participar da missão.</string>
+    <string name="mission_complete">Missão concluída! Sensor e filtro coletados: 20 pontos.</string>
+    <string name="next_object">Você ganhou 10 pontos! Escolha o outro objeto na aba de modelos.</string>
+    <string name="score_format">%1$d pontos • %2$d/2 objetos</string>
+    <string name="initial_score">0 pontos • 0/2 objetos</string>
+    <string name="place_model">Posicionar objeto</string>
+    <string name="collect_model">Coletar (+10 pontos)</string>
+    <string name="sound_on">Som: ligado</string>
+    <string name="sound_off">Som: desligado</string>
+    <string name="reset_game">Reiniciar missão</string>
 </resources>

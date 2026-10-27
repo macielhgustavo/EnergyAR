@@ -1,0 +1,3 @@
+sensor.glb e filtro.glb: modelos originais gerados para este projeto, disponibilizados sob CC0 1.0 Universal.
+O áudio ambiente.wav é uma síntese original de tons de 80 Hz e 120 Hz, também CC0 1.0 Universal.
+A licença não se aplica aos modelos anteriores do template.
