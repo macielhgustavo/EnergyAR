@@ -72,3 +72,7 @@ Além da experiência visual, o projeto demonstra integração entre recursos na
 ## Status
 
 Projeto funcional em evolução, utilizado para estudo e desenvolvimento de experiências de realidade aumentada no Android.
+
+## Continuação — missão de coleta
+
+Dois novos modelos GLB (sensor e filtro), coleta com 10 pontos por objeto e som ambiente controlável. Consulte [a descrição e o roteiro de teste no celular](docs/Entrega_RA.md). O teste físico e as capturas reais de RA permanecem pendentes.
