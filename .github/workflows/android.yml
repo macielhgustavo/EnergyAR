@@ -1,7 +1,7 @@
 name: Android
 on:
   push:
-    branches: [main, aula-ra-objetos-interacao-som]
+    branches: [main, aula-ra-objetos-interacao-som, feature/sceneview-energyar]
   pull_request:
 permissions:
   contents: read
@@ -33,3 +33,4 @@ jobs:
           path: |
             app/build/reports/tests/
             app/build/reports/lint-results-debug.html
+
