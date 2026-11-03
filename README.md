@@ -42,7 +42,7 @@ app/src/main/
 
 ## Como funciona a realidade aumentada
 
-A tela principal utiliza `ArSceneView` para renderizar a cena e `ArModelNode` para carregar o objeto 3D. O modelo é inicialmente exibido em modo de posicionamento e pode ser ancorado no ambiente pelo usuário.
+A tela principal utiliza `ARSceneView` e `ModelNode` do SceneView 2.2.1. Em celulares com ARCore instalado, o usuário encontra uma superfície horizontal e posiciona o modelo em um `AnchorNode`.
 
 A aplicação solicita a permissão de câmera em tempo de execução e inicializa a experiência de RA somente após a autorização.
 
@@ -52,7 +52,7 @@ A aplicação solicita a permissão de câmera em tempo de execução e iniciali
 
 - Android Studio
 - JDK compatível com o projeto
-- dispositivo Android com suporte ao ARCore
+- dispositivo Android; para ancoragem real, é necessário suporte ao ARCore e o serviço instalado
 
 Clone o repositório e abra a pasta no Android Studio. Em seguida, sincronize o Gradle e execute a aplicação em um dispositivo físico compatível com realidade aumentada.
 
@@ -72,3 +72,21 @@ Além da experiência visual, o projeto demonstra integração entre recursos na
 ## Status
 
 Projeto funcional em evolução, utilizado para estudo e desenvolvimento de experiências de realidade aumentada no Android.
+
+## Atualização SceneView — novembro de 2026
+
+Adaptação da branch [feature-sceneview do professor Jailton](https://github.com/jailtoncoelho/AndroidAppTemplateAR/tree/feature-sceneview), revisão `ed416147360d2cf6a823c8fc512513747280e88c`, preservando a missão, os modelos e o áudio do EnergyAR.
+
+- ARCore instalado e compatível: ancoragem real em superfícies horizontais.
+- Emulador ou dispositivo sem ARCore disponível: prévia 3D sobre a câmera usando CameraX 1.5.3.
+- Câmera negada, ausente ou indisponível: cena 3D sem câmera.
+- Falha ou falta prolongada de rastreamento: retorno automático à prévia. Não encontrar uma superfície, por si só, não dispara essa troca.
+- A prévia identifica a coleta como **simulação**. Ela não comprova funcionamento em RA.
+- Em RA, a coleta exige um objeto ancorado e rastreamento ativo; a pontuação continua limitada a uma coleta por objeto por rodada.
+
+O som pausa em segundo plano e é liberado ao sair da tela. A câmera é opcional no manifesto. A compilação, os testes e o lint são executados pelo workflow Android, que também disponibiliza o APK de depuração.
+
+## Continuação — missão de coleta
+
+Dois novos modelos GLB (sensor e filtro), coleta com 10 pontos por objeto e som ambiente controlável. Consulte [a descrição e o roteiro de teste no celular](docs/Entrega_RA.md). O teste físico e as capturas reais de RA permanecem pendentes.
+
