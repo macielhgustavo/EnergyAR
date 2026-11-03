@@ -2,6 +2,7 @@
 
 - Fork: https://github.com/macielhgustavo/EnergyAR
 - Branch: https://github.com/macielhgustavo/EnergyAR/tree/aula-ra-objetos-interacao-som
+- Atualização SceneView: https://github.com/macielhgustavo/EnergyAR/tree/feature/sceneview-energyar
 
 ## Nova funcionalidade
 Missão de coleta em realidade aumentada. O jogador escolhe o sensor e o filtro na aba de modelos, posiciona cada objeto sobre uma superfície horizontal e toca em **Coletar**. Cada objeto rende 10 pontos uma única vez por rodada. Ao coletar os dois, a missão termina com 20 pontos. O botão Reiniciar missão limpa a pontuação. O estado é mantido ao trocar de tela durante a sessão.
@@ -27,3 +28,17 @@ Não há aparelho físico conectado ao ambiente de desenvolvimento. Portanto, es
 8. Teste negar a câmera, sair da tela durante o carregamento e voltar.
 
 As duas capturas reais devem ser anexadas à entrega após o teste no aparelho. Imagens ilustrativas não comprovam execução em RA.
+
+## Compatibilidade com a nova branch do professor
+
+O EnergyAR adapta a `feature-sceneview` do AndroidAppTemplateAR (commit `ed416147360d2cf6a823c8fc512513747280e88c`) ao jogo existente. SceneView 2.2.1 substitui a API antiga, e CameraX 1.5.3 permite uma prévia em dispositivos sem ARCore.
+
+Roteiro adicional, ainda pendente de execução em aparelho/emulador:
+
+1. No emulador, confira a indicação de simulação, o modelo 3D e a coleta dos dois objetos.
+2. Negue a câmera: deve surgir uma cena 3D sem câmera, com coleta simulada.
+3. Em aparelho sem ARCore instalado, confirme a prévia sobre a câmera, sem promessa de ancoragem real.
+4. Em aparelho compatível, confirme que Coletar só fica disponível depois da ancoragem e com rastreamento ativo. Interrompa o rastreamento e confira o bloqueio da coleta.
+5. Troque de modelo durante o carregamento e navegue repetidamente entre as abas; a seleção mais recente deve prevalecer.
+6. Confira pausa do som e retomada da câmera após segundo plano. Se o rastreamento permanecer indisponível por aproximadamente 15 segundos em primeiro plano, deve iniciar a prévia. A câmera indisponível por aproximadamente 8 segundos deve dar lugar à cena sem câmera.
+
